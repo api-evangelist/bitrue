@@ -1,23 +1,171 @@
 aid: bitrue
+
 name: Bitrue
-description: 'Bitrue is a company surfaced via the API Evangelist harvest backlog (source: market-gap:crypto-exchanges)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Bitrue is a centralized cryptocurrency exchange offering spot trading, USDT-margined and coin-margined perpetual futures, copy trading
+  and a crypto wallet. It publishes public REST and WebSocket APIs for market data, account and order management, deposits and withdrawals, with
+  HMAC-SHA256 signed requests, documented at www.bitrue.com/api-docs and in the Bitrue-exchange GitHub organization.
+
 url: https://raw.githubusercontent.com/api-evangelist/bitrue/refs/heads/main/apis.yml
+
+image: https://static.bitrue.com/img/website/uniframe/logo-20221119.png
+
 x-type: company
+
 x-source: harvest:market-gap:crypto-exchanges
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+
+x-tier-reason: 'enrichment pass 2026-10-13 (local-v5; was harvest)'
+
 specificationVersion: '0.20'
+
 created: '2026-10-13'
+
 modified: '2026-10-13'
+
 tags:
 - Company
-apis: []
+- Cryptocurrency
+- Exchanges
+- Trading
+- Futures
+- Market Data
+- WebSockets
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: RateLimits
+  url: rate-limits/bitrue-rate-limits.yml
+- type: Spectral
+  url: rules/bitrue-rules.yml
+- type: JSONLD
+  url: json-ld/bitrue-context.jsonld
+- type: Vocabulary
+  url: vocabulary/bitrue-vocabulary.yml
+- type: DataModel
+  url: data-model/bitrue-data-model.yml
+- type: ErrorCatalog
+  url: errors/bitrue-error-codes.yml
+- type: Conformance
+  url: conformance/bitrue-conformance.yml
+- type: LLMsTxt
+  url: llms/bitrue-llms.txt
+- type: WellKnown
+  url: well-known/bitrue-well-known.yml
+- type: Hosts
+  url: hosts/bitrue-hosts.yml
+- type: Vendors
+  url: vendors/bitrue-vendors.yml
+- type: DomainSecurity
+  url: security/bitrue-domain-security.yml
 - type: Website
   url: https://www.bitrue.com
+- type: DeveloperPortal
+  url: https://www.bitrue.com/bitrue-api
+- type: Documentation
+  url: https://www.bitrue.com/api-docs
+- type: GitHubOrganization
+  url: https://github.com/Bitrue-exchange
+- type: Blog
+  url: https://www.bitrue.com/blog
+- type: Login
+  url: https://www.bitrue.com/user/login
+- type: SignUp
+  url: https://www.bitrue.com/user/register
+- type: Support
+  url: https://support.bitrue.com/hc/en-001
+- type: PrivacyPolicy
+  url: https://support.bitrue.com/hc/en-001/articles/4405473185945
+
+apis:
+- aid: bitrue:bitrue-spot-api
+  name: Bitrue Spot API
+  description: REST API for Bitrue spot trading -- market data (depth, trades, klines, tickers), exchange info, account, order placement and cancellation,
+    trade history, deposits and withdrawals, plus a listenKey user data stream. Signed endpoints use an API key header and an HMAC SHA256 signature.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  image: https://static.bitrue.com/img/website/uniframe/logo-20221119.png
+  baseURL: https://openapi.bitrue.com
+  tags:
+  - Spot Trading
+  - Market Data
+  - Orders
+  properties:
+  - type: Documentation
+    url: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  - type: Documentation
+    url: https://github.com/Bitrue-exchange/Spot-official-api-docs
+- aid: bitrue:bitrue-usdt-m-futures-api
+  name: Bitrue USDT-M Futures API
+  description: REST API for Bitrue USDT-margined perpetual futures -- contracts, depth, klines, tickers, account, leverage brackets, commission
+    rate, orders, trades and transfer history.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/futures/index.html
+  image: https://static.bitrue.com/img/website/uniframe/logo-20221119.png
+  baseURL: https://fapi.bitrue.com
+  tags:
+  - Futures
+  - Derivatives
+  properties:
+  - type: Documentation
+    url: https://www.bitrue.com/api_docs_includes_file/futures/index.html
+  - type: Documentation
+    url: https://github.com/Bitrue-exchange/USDT-M-Future-open-api-docs
+- aid: bitrue:bitrue-coin-m-futures-api
+  name: Bitrue COIN-M Futures API
+  description: REST API for Bitrue coin-margined (inverse) perpetual futures -- market data, account and order management.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/delivery/index.html
+  image: https://static.bitrue.com/img/website/uniframe/logo-20221119.png
+  baseURL: https://fapi.bitrue.com
+  tags:
+  - Futures
+  - Derivatives
+  properties:
+  - type: Documentation
+    url: https://www.bitrue.com/api_docs_includes_file/delivery/index.html
+  - type: Documentation
+    url: https://github.com/Bitrue-exchange/COIN-M-Future-open-api-docs
+- aid: bitrue:bitrue-api
+  name: Bitrue API
+  description: 'Bitrue API as documented publicly: 20 operations. Contract generated from the documentation by API Evangelist (2026-10-13); not
+    the provider''s own document.'
+  humanURL: https://www.bitrue.com/api-docs
+  image: https://static.bitrue.com/img/website/uniframe/logo-20221119.png
+  baseURL: https://openapi.bitrue.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/bitrue-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-ticker-tickerid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v2-mytrades-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-etf-net-value-symbol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-sapi-v1-order-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-fapi-v1-order-request-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-10-13'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://www.bitrue.com
+    status: 200
+x-enrichment:
+  status: enriched
+  pass: local-v5
+  date: '2026-10-13'
+  artifacts_added: 14

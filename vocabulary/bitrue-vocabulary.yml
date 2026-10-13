@@ -1,0 +1,124 @@
+generated: '2026-10-13'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/bitrue-openapi-generated.yml
+vocabulary:
+  name: Bitrue Domain Vocabulary
+  description: 'Terms declared by Bitrue''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-13'
+  terms:
+  - term: GetResponse
+    definition: 'Object declared by the contract with fields: high, vol, last, low, rose, time.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/GetResponse
+  - term: GetApiV1EtfNetValueSymbolResponse
+    definition: 'Object declared by the contract with fields: id, symbol, futruesPrice, netValue, beginNetValue, beginFutruesPrice, seqId, beginTs,
+      ts.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/GetApiV1EtfNetValueSymbolResponse
+  - term: GetApiV1MarketKlineResponse
+    definition: 'Object declared by the contract with fields: symbol, scale, data.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/GetApiV1MarketKlineResponse
+  - term: DeleteApiV1OrderResponse
+    definition: 'Object declared by the contract with fields: symbol, origClientOrderId, orderId, clientOrderId.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/DeleteApiV1OrderResponse
+  - term: PostApiV1OrderResponse
+    definition: 'Object declared by the contract with fields: serverTime.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/PostApiV1OrderResponse
+  - term: GetApiV1TickerTickeridResponse
+    definition: 'Object declared by the contract with fields: symbol, priceChange, priceChangePercent, weightedAvgPrice, prevClosePrice, lastPrice,
+      lastQty, bidPrice, askPrice, openPrice, highPrice, lowPrice. (7 more)'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/GetApiV1TickerTickeridResponse
+  - term: PostApiV1WithdrawCommitResponse
+    definition: 'Object declared by the contract with fields: code, msg, data.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/PostApiV1WithdrawCommitResponse
+  - term: GetApiV1V1IdResponse
+    definition: 'Object declared by the contract with fields: makerCommission, takerCommission, buyerCommission, sellerCommission, canTrade, canWithdraw,
+      canDeposit, updateTime, balances.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/GetApiV1V1IdResponse
+  - term: GetApiV1V1IdHistoryResponse
+    definition: 'Object declared by the contract with fields: code, msg, data.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/GetApiV1V1IdHistoryResponse
+  - term: GetApiV2MytradesResponse
+    definition: 'Object declared by the contract with fields: symbol, id, tradeId, orderId, price, qty, commission, commissionAsset, time, isBuyer,
+      isMaker, isBestMatch.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/GetApiV2MytradesResponse
+  - term: PostFapiV1OrderRequest
+    definition: 'Object declared by the contract with fields: symbol, side, type, volume, price.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/PostFapiV1OrderRequest
+  - term: PostPoseidonApiV1ListenkeyResponse
+    definition: 'Object declared by the contract with fields: msg, code, data.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/PostPoseidonApiV1ListenkeyResponse
+  - term: DeletePoseidonApiV1ListenkeyListenkeyResponse
+    definition: 'Object declared by the contract with fields: msg, code.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/DeletePoseidonApiV1ListenkeyListenkeyResponse
+  - term: PutPoseidonApiV1ListenkeyListenkeyResponse
+    definition: 'Object declared by the contract with fields: msg, code.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/PutPoseidonApiV1ListenkeyListenkeyResponse
+  - term: PostSapiV1OrderRequest
+    definition: 'Object declared by the contract with fields: symbol, price, quantity, side, type.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/PostSapiV1OrderRequest
+  - term: PostSapiV1OrderTestRequest
+    definition: 'Object declared by the contract with fields: symbol, price, quantity, side, type.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/PostSapiV1OrderTestRequest
+  - term: PostUserStreamApiV1ListenkeyResponse
+    definition: 'Object declared by the contract with fields: listenKey.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/PostUserStreamApiV1ListenkeyResponse
+  - term: Api
+    definition: 'Resource group in the contract; its operation GET /: GET /'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml
+  - term: Fapi
+    definition: 'Resource group in the contract; its operation POST /fapi/v1/order: SIGNED Endpoint Examples for POST /fapi/v1/order - HMAC Keys'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml
+  - term: Poseidon
+    definition: 'Resource group in the contract; its operation POST /poseidon/api/v1/listenKey: Start a new user data stream.'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml
+  - term: Sapi
+    definition: 'Resource group in the contract; its operation POST /sapi/v1/order: New Order (TRADE)(HMAC SHA256)'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml
+  - term: User Stream
+    definition: 'Resource group in the contract; its operation POST /user_stream/api/v1/listenKey: Create a new user data stream listenKey.'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/bitrue-openapi-generated.yml

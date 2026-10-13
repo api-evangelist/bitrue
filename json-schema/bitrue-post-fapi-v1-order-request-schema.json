@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/bitrue/main/json-schema/bitrue-post-fapi-v1-order-request-schema.json",
+  "title": "PostFapiV1OrderRequest",
+  "x-generated": "2026-10-13",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/PostFapiV1OrderRequest",
+  "type": "object",
+  "properties": {
+    "symbol": {
+      "type": "string"
+    },
+    "side": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "volume": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "symbol",
+    "side",
+    "type",
+    "volume",
+    "price"
+  ]
+}

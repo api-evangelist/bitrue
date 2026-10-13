@@ -1,0 +1,93 @@
+# Bitrue - Buy Bitcoin & Crypto | Crypto Exchange, App & Wallet
+
+> Bitrue - Buy BTC, ETH, XRP and more on Bitrue, a leading crypto exchange - explore Web3, invest in DeFi and NFTs. Register now and experience the future of finance.
+
+## Trading Options
+
+- [Buy and Sell](https://www.bitrue.com/otc/buy-USDT): Purchase and sell cryptocurrencies using various payment methods.
+- [Spot Trading](https://www.bitrue.com/trade): Trade cryptocurrencies on the spot market.
+- [Futures](https://www.bitrue.com/trade/futures): Trade perpetual cryptocurrency futures contracts.
+- [Alpha](https://www.bitrue.com/alpha): Quick access to Web3 via Alpha Trading.
+
+## Crypto Price
+
+- [All Cryptocurrencies](https://www.bitrue.com/price): A comprehensive list cryptocurrencies.
+- [Bitcoin Price](https://www.bitrue.com/price/btc): Live price, chart, market cap, and market performance data for Bitcoin.
+- [Ethereum Price](https://www.bitrue.com/price/eth): Live price, chart, market cap, and market performance data for Ethereum.
+- [Solana Price](https://www.bitrue.com/price/sol): Live price, chart, market cap, and market performance data for Solana.
+
+
+## Crypto Spot Trading
+
+- [BTC/USDC Spot Trading](https://www.bitrue.com/trade/btc_usdc): Trade Bitcoin to USDC stablecoin instantly.
+- [BTC/USDT Spot Trading](https://www.bitrue.com/trade/btc_usdt): Trade Bitcoin to USDT stablecoin instantly.
+- [ETH/USDT Spot Trading](https://www.bitrue.com/trade/eth_usdt): Trade Ethereum to USDT stablecoin instantly.
+- [ETH/USDC Spot Trading](https://www.bitrue.com/trade/eth_usdc): Trade Ethereum to USDC stablecoin instantly.
+- [SOL/USDT Spot Trading](https://www.bitrue.com/trade/sol_usdt): Trade Solana to USDT stablecoin instantly.
+- [SOL/USDC Spot Trading](https://www.bitrue.com/trade/sol_usdc): Trade Solana to USDC stablecoin instantly.
+
+## Crypto Futures Trading
+
+- [BTC/USDT Futures Trading](https://www.bitrue.com/futures/BTC): Trade Bitcoin perpetual futures with USDT margin.
+- [ETH/USDT Futures Trading](https://www.bitrue.com/futures/ETH): Trade Ethereum perpetual futures with USDT margin.
+- [SOL/USDT Futures Trading](https://www.bitrue.com/futures/SOL): Trade Solana perpetual futures with USDT margin.
+
+## Buy Crypto
+
+- [Buy Bitcoin (BTC)](https://www.bitrue.com/otc/buy-btc): Purchase Bitcoin using multiple payment methods.
+- [Buy Ethereum (ETH)](https://www.bitrue.com/otc/buy-eth): Purchase Ethereum using multiple payment methods.
+- [Buy Solana (SOL)](https://www.bitrue.com/otc/buy-sol): Purchase Solana using multiple payment methods.
+
+## Crypto Calculator
+
+- [Convert BTC to USD](https://www.bitrue.com/converter/btc-to-usd): Calculate Bitcoin value in USD.
+- [Convert ETH to USD](https://www.bitrue.com/converter/eth-to-usd): Calculate Ethereum value in USD.
+- [Convert SOL to USD](https://www.bitrue.com/converter/sol-to-usd): Calculate Solana value in USD.
+
+## Earning Opportunities
+
+- [Power Piggy](https://www.bitrue.com/flexible-staking): Earn rewards on your crypto with flexible and fixed-term staking options.
+- [On-chain Earn](https://www.bitrue.com/staking): Participate in DeFi protocols directly to earn yields.
+- [LaunchPool](https://www.bitrue.com/launchpool): Flexible staking to earn popular tokens.
+- [Loan](https://www.bitrue.com/loan): Borrow funds using your crypto assets as collateral.
+- [Auto Invest](https://www.bitrue.com/btc-xrp-eth-trading-bot): Spread out your investmentsGrab long-term profit and flexible interests.
+
+## Services and Support
+
+- [Token Listing](https://www.bitrue.com/token-listing): Bitrue has been among the most popular cryptocurrency and derivatives exchanges.
+- [Bitrue Verify](https://www.bitrue.com/activity/bverify): Check to see if a website link, email, or social media post comes from an official Bitrue channel by using Bitrue Verify.
+- [APIs](https://www.bitrue.com/bitrue-api): Integrate with the Bitrue trading engine using their powerful API.
+- [Help Center](https://support.bitrue.com/hc/en-001): Partner with Bitrue to earn commissions as a broker.
+- [Announcement](https://support.bitrue.com/hc/en-001/categories/22716489180569-Bitrue-Announcement): Bitrue Official Announcement.
+
+## Blog, Crypto Trends, Market Updates, Research Analytics, and Press Releases
+
+- [Blog](https://www.bitrue.com/blog): Bitrue Blog - your go-to source for the latest crypto news, DeFi insights, market trends, and in-depth blockchain analysis.
+- [Crypto Trends](https://www.bitrue.com/blog/category/crypto-trends): Discover the latest movements, innovations, and shifts shaping the crypto landscape.
+- [Market Updates](https://www.bitrue.com/blog/category/maket-updates): Stay informed with real-time insights and analysis on crypto prices and market performance.
+- [Research Analytics](https://www.bitrue.com/blog/category/research-and-analytics): Dive deep into data-driven reports and expert analysis of blockchain and DeFi ecosystems.
+- [Press Releases](https://www.bitrue.com/blog/category/press-releases): Get the latest official announcements on partnerships, launches, and industry developments.
+
+## Community and Engagement
+
+- [Referral](https://www.bitrue.com/referral): Invite friends to Bitrue and earn rewards.
+- [Affiliates](https://www.bitrue.com/affiliate): Join the Bitrue affiliate program to earn commissions.
+
+## Getting Started
+
+- [Try Bitrue](https://www.bitrue.com/user/register): Create a new Bitrue account to start trading.
+- [How to Buy Crypto](https://www.bitrue.com/how-to-buy): A general guide on how to purchase cryptocurrencies.
+- [How to Buy Bitcoin](https://www.bitrue.com/how-to-buy/btc): A step-by-step guide on how to purchase Bitcoin (BTC).
+- [How to Buy Ethereum](https://www.bitrue.com/how-to-buy/eth): A step-by-step guide on how to purchase Ethereum (ETH).
+- [How to Buy Solana](https://www.bitrue.com/how-to-buy/sol): A step-by-step guide on how to purchase Solana (SOL).
+
+## Legal and Compliance
+
+- [Terms of Service](https://support.bitrue.com/hc/en-001/articles/4405473110681-Bitrue-Terms-of-Use): The user agreement for using Bitrue services.
+- [Privacy Notice](https://support.bitrue.com/hc/en-001/articles/4405473185945): Details on how user data is collected and used.
+- [Cookie Preferences](https://support.bitrue.com/hc/en-001/articles/13919209518489-Learn-More-About-Cookies): When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies.
+
+## Mobile and Accessibility
+
+- [Bitrue iOS App](https://apps.apple.com/app/bitrue/id1435877386): Download the official crypto mobile app for iOS.
+- [Bitrue Android App](https://play.google.com/store/apps/details?id=com.bitrue.currency.exchange): Download the official crypto mobile app for Android.

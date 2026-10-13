@@ -1,0 +1,117 @@
+generated: '2026-10-13'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 5
+  other_domain: 1
+  platform: 2
+  roles:
+  - api
+  - other
+  - source
+  - support
+  - website
+hosts:
+- host: api.bitrue.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: bitrue.com
+  role: api
+  relation: own
+- host: apps.apple.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: apple.com
+  role: other
+  relation: platform
+- host: fapi.bitrue.com
+  found_by:
+  - apis[]
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves:
+  - api
+  registrable_domain: bitrue.com
+  role: other
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: openapi.bitrue.com
+  found_by:
+  - apis[]
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves:
+  - api
+  registrable_domain: bitrue.com
+  role: other
+  relation: own
+- host: play.google.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: google.com
+  role: other
+  relation: other-domain
+- host: support.bitrue.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Support
+  - PrivacyPolicy
+  serves:
+  - docs
+  - support
+  vendor: zendesk
+  registrable_domain: bitrue.com
+  role: support
+  relation: own
+- host: www.bitrue.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - DeveloperPortal
+  - Documentation
+  - Blog
+  - Login
+  - SignUp
+  serves:
+  - docs
+  - cdn
+  vendor: cloudfront
+  registrable_domain: bitrue.com
+  role: website
+  relation: own

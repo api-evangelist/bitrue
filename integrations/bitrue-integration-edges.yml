@@ -1,0 +1,16 @@
+generated: '2026-10-13'
+method: none
+source:
+- https://zapier.com/apps/bitrue/integrations
+- https://n8n.io/integrations/bitrue/
+- https://composio.dev/toolkits/bitrue
+- https://monid.ai/tools/bitrue
+checked:
+- https://composio.dev/toolkits/bitrue
+- https://monid.ai/tools/bitrue
+- https://n8n.io/integrations/bitrue/
+- https://zapier.com/apps/bitrue/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

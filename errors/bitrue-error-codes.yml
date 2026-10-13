@@ -1,0 +1,16 @@
+generated: '2026-10-13'
+method: searched
+source: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+format: numeric code in a JSON body alongside the HTTP status
+envelope: '{"code": <int>, "msg": <string>}'
+problems:
+- {status: 200, type: '-2013', title: Could not find order information for given order ID.}
+- {status: 200, type: '-2017', title: Could not find net-value for given symbol.}
+- {status: 412, type: '-1102', title: Mandatory parameter is missing or illegal.}
+- {status: 412, type: '-1121', title: Invalid symbol name given.}
+- {status: 401, type: '-1022', title: Invalid signature or Invalid timestamp or Unauthorized for API.}
+- {status: 412, type: '-1111', title: Invalid volume or price or address given.}
+- {status: 406, type: '-2010', title: Order placement or cancellation or withdrawal rejected.}
+- {status: 405, type: '-1020', title: Method not supported.}
+- {status: 500, type: '-1016', title: Service unavailable}
+- {status: 503, type: '503', title: Service unavailable}

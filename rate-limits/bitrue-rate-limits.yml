@@ -1,0 +1,17 @@
+name: Bitrue Spot API rate limits
+generated: '2026-10-13'
+method: searched
+source: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+exhaustion_status: 429
+limits:
+- name: general
+  scope: per-IP
+  window: 1 minute
+  max: 1200
+  limit_text: That means only allow 1200 weight in 1 minute per IP.
+- name: orders_ip_seconds
+  scope: per-IP (order endpoints)
+  window: 60 seconds
+  max: 100
+  limit_text: That means only allow 100 weight for order endpoints in 60 seconds per IP.
+note: 'Limits are weight-based; each route has a weight. Docs: "A 429 will be returned when either rate limit is violated."'

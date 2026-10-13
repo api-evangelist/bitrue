@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/bitrue/main/json-schema/bitrue-get-api-v2-mytrades-response-schema.json",
+  "title": "GetApiV2MytradesResponse",
+  "x-generated": "2026-10-13",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/bitrue-openapi-generated.yml#/components/schemas/GetApiV2MytradesResponse",
+  "type": "object",
+  "properties": {
+    "symbol": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "tradeId": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "qty": {
+      "type": "string"
+    },
+    "commission": {
+      "type": "string"
+    },
+    "commissionAsset": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "isBuyer": {
+      "type": "string"
+    },
+    "isMaker": {
+      "type": "string"
+    },
+    "isBestMatch": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "@context": {
+    "@vocab": "https://bitrue.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "bitrue": "https://bitrue.com/schema#",
+    "GetResponse": "bitrue:GetResponse",
+    "high": {
+      "@id": "bitrue:high",
+      "@type": "xsd:string"
+    },
+    "vol": {
+      "@id": "bitrue:vol",
+      "@type": "xsd:string"
+    },
+    "last": {
+      "@id": "bitrue:last",
+      "@type": "xsd:string"
+    },
+    "low": {
+      "@id": "bitrue:low",
+      "@type": "xsd:string"
+    },
+    "rose": {
+      "@id": "bitrue:rose",
+      "@type": "xsd:string"
+    },
+    "time": {
+      "@id": "bitrue:time",
+      "@type": "xsd:integer"
+    },
+    "GetApiV1EtfNetValueSymbolResponse": "bitrue:GetApiV1EtfNetValueSymbolResponse",
+    "id": {
+      "@id": "bitrue:id",
+      "@type": "xsd:string"
+    },
+    "symbol": {
+      "@id": "bitrue:symbol",
+      "@type": "xsd:string"
+    },
+    "futruesPrice": {
+      "@id": "bitrue:futruesPrice",
+      "@type": "xsd:string"
+    },
+    "netValue": {
+      "@id": "bitrue:netValue",
+      "@type": "xsd:string"
+    },
+    "beginNetValue": {
+      "@id": "bitrue:beginNetValue",
+      "@type": "xsd:string"
+    },
+    "beginFutruesPrice": {
+      "@id": "bitrue:beginFutruesPrice",
+      "@type": "xsd:string"
+    },
+    "seqId": {
+      "@id": "bitrue:seqId",
+      "@type": "xsd:string"
+    },
+    "beginTs": {
+      "@id": "bitrue:beginTs",
+      "@type": "xsd:string"
+    },
+    "ts": {
+      "@id": "bitrue:ts",
+      "@type": "xsd:string"
+    },
+    "GetApiV1MarketKlineResponse": "bitrue:GetApiV1MarketKlineResponse",
+    "scale": {
+      "@id": "bitrue:scale",
+      "@type": "xsd:string"
+    },
+    "data": {
+      "@id": "bitrue:data",
+      "@container": "@list"
+    },
+    "DeleteApiV1OrderResponse": "bitrue:DeleteApiV1OrderResponse",
+    "origClientOrderId": {
+      "@id": "bitrue:origClientOrderId",
+      "@type": "xsd:string"
+    },
+    "orderId": {
+      "@id": "bitrue:orderId",
+      "@type": "xsd:string"
+    },
+    "clientOrderId": {
+      "@id": "bitrue:clientOrderId",
+      "@type": "xsd:string"
+    },
+    "PostApiV1OrderResponse": "bitrue:PostApiV1OrderResponse",
+    "serverTime": {
+      "@id": "bitrue:serverTime",
+      "@type": "xsd:integer"
+    },
+    "GetApiV1TickerTickeridResponse": "bitrue:GetApiV1TickerTickeridResponse",
+    "priceChange": {
+      "@id": "bitrue:priceChange",
+      "@type": "xsd:string"
+    },
+    "priceChangePercent": {
+      "@id": "bitrue:priceChangePercent",
+      "@type": "xsd:string"
+    },
+    "weightedAvgPrice": {
+      "@id": "bitrue:weightedAvgPrice",
+      "@type": "xsd:string"
+    },
+    "prevClosePrice": {
+      "@id": "bitrue:prevClosePrice",
+      "@type": "xsd:string"
+    },
+    "lastPrice": {
+      "@id": "bitrue:lastPrice",
+      "@type": "xsd:string"
+    },
+    "lastQty": {
+      "@id": "bitrue:lastQty",
+      "@type": "xsd:string"
+    },
+    "bidPrice": {
+      "@id": "bitrue:bidPrice",
+      "@type": "xsd:string"
+    },
+    "askPrice": {
+      "@id": "bitrue:askPrice",
+      "@type": "xsd:string"
+    },
+    "openPrice": {
+      "@id": "bitrue:openPrice",
+      "@type": "xsd:string"
+    },
+    "highPrice": {
+      "@id": "bitrue:highPrice",
+      "@type": "xsd:string"
+    },
+    "lowPrice": {
+      "@id": "bitrue:lowPrice",
+      "@type": "xsd:string"
+    },
+    "volume": {
+      "@id": "bitrue:volume",
+      "@type": "xsd:string"
+    },
+    "quoteVolume": {
+      "@id": "bitrue:quoteVolume",
+      "@type": "xsd:string"
+    },
+    "openTime": {
+      "@id": "bitrue:openTime",
+      "@type": "xsd:decimal"
+    },
+    "closeTime": {
+      "@id": "bitrue:closeTime",
+      "@type": "xsd:decimal"
+    },
+    "firstId": {
+      "@id": "bitrue:firstId",
+      "@type": "xsd:decimal"
+    },
+    "lastId": {
+      "@id": "bitrue:lastId",
+      "@type": "xsd:decimal"
+    },
+    "count": {
+      "@id": "bitrue:count",
+      "@type": "xsd:decimal"
+    },
+    "PostApiV1WithdrawCommitResponse": "bitrue:PostApiV1WithdrawCommitResponse",
+    "code": {
+      "@id": "bitrue:code",
+      "@type": "xsd:string"
+    },
+    "msg": {
+      "@id": "bitrue:msg",
+      "@type": "xsd:string"
+    },
+    "GetApiV1V1IdResponse": "bitrue:GetApiV1V1IdResponse",
+    "makerCommission": {
+      "@id": "bitrue:makerCommission",
+      "@type": "xsd:string"
+    },
+    "takerCommission": {
+      "@id": "bitrue:takerCommission",
+      "@type": "xsd:string"
+    },
+    "buyerCommission": {
+      "@id": "bitrue:buyerCommission",
+      "@type": "xsd:string"
+    },
+    "sellerCommission": {
+      "@id": "bitrue:sellerCommission",
+      "@type": "xsd:string"
+    },
+    "canTrade": {
+      "@id": "bitrue:canTrade",
+      "@type": "xsd:string"
+    },
+    "canWithdraw": {
+      "@id": "bitrue:canWithdraw",
+      "@type": "xsd:string"
+    },
+    "canDeposit": {
+      "@id": "bitrue:canDeposit",
+      "@type": "xsd:string"
+    },
+    "updateTime": {
+      "@id": "bitrue:updateTime",
+      "@type": "xsd:string"
+    },
+    "balances": {
+      "@id": "bitrue:balances",
+      "@type": "xsd:string"
+    },
+    "GetApiV1V1IdHistoryResponse": "bitrue:GetApiV1V1IdHistoryResponse",
+    "GetApiV2MytradesResponse": "bitrue:GetApiV2MytradesResponse",
+    "tradeId": {
+      "@id": "bitrue:tradeId",
+      "@type": "xsd:string"
+    },
+    "price": {
+      "@id": "bitrue:price",
+      "@type": "xsd:string"
+    },
+    "qty": {
+      "@id": "bitrue:qty",
+      "@type": "xsd:string"
+    },
+    "commission": {
+      "@id": "bitrue:commission",
+      "@type": "xsd:string"
+    },
+    "commissionAsset": {
+      "@id": "bitrue:commissionAsset",
+      "@type": "xsd:string"
+    },
+    "isBuyer": {
+      "@id": "bitrue:isBuyer",
+      "@type": "xsd:string"
+    },
+    "isMaker": {
+      "@id": "bitrue:isMaker",
+      "@type": "xsd:string"
+    },
+    "isBestMatch": {
+      "@id": "bitrue:isBestMatch",
+      "@type": "xsd:string"
+    },
+    "PostFapiV1OrderRequest": "bitrue:PostFapiV1OrderRequest",
+    "side": {
+      "@id": "bitrue:side",
+      "@type": "xsd:string"
+    },
+    "type": {
+      "@id": "bitrue:type",
+      "@type": "xsd:string"
+    },
+    "PostPoseidonApiV1ListenkeyResponse": "bitrue:PostPoseidonApiV1ListenkeyResponse",
+    "DeletePoseidonApiV1ListenkeyListenkeyResponse": "bitrue:DeletePoseidonApiV1ListenkeyListenkeyResponse",
+    "PutPoseidonApiV1ListenkeyListenkeyResponse": "bitrue:PutPoseidonApiV1ListenkeyListenkeyResponse",
+    "PostSapiV1OrderRequest": "bitrue:PostSapiV1OrderRequest",
+    "quantity": {
+      "@id": "bitrue:quantity",
+      "@type": "xsd:string"
+    },
+    "PostSapiV1OrderTestRequest": "bitrue:PostSapiV1OrderTestRequest",
+    "PostUserStreamApiV1ListenkeyResponse": "bitrue:PostUserStreamApiV1ListenkeyResponse",
+    "listenKey": {
+      "@id": "bitrue:listenKey",
+      "@type": "xsd:string"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Bitrue API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Bitrue's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-13) from openapi/_ae-authored/bitrue-openapi-generated.yml.",
+  "dcterms:created": "2026-10-13",
+  "dcterms:source": [
+    "openapi/_ae-authored/bitrue-openapi-generated.yml"
+  ]
+}
