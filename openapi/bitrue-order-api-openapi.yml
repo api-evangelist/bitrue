@@ -1,0 +1,161 @@
+openapi: 3.2.0
+info:
+  title: Bitrue Order API
+  version: '2026-10-13'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-13: 20 operation(s) read from 4 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Bitrue has published no machine-readable contract that the pipeline could find. Engine: anthropic.'
+  x-evidence-tiers:
+    code-example: 3
+    documentation: 17
+    pages-with-code: 4
+    pages-read: 4
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-13'
+  x-generator: generate-contract-from-docs.py
+  x-engine: anthropic
+  x-sources:
+  - https://www.bitrue.com/api-docs
+  - https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  - https://www.bitrue.com/api_docs_includes_file/futures/index.html
+  - https://www.bitrue.com/api_docs_includes_file/delivery/index.html
+servers:
+- url: https://openapi.bitrue.com
+security:
+- apiKey: []
+tags:
+- name: Order
+paths:
+  /api/v1/order:
+    delete:
+      operationId: delete_api_v1_order
+      tags:
+      - Order
+      summary: Cancel an active order
+      x-source: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+      parameters:
+      - name: symbol
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: orderId
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: origClientOrderId
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: newClientOrderId
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: recvWindow
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: timestamp
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteApiV1OrderResponse'
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_api_v1_order
+      tags:
+      - Order
+      summary: POST /api/v1/order
+      x-source: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+      parameters:
+      - name: price
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: quantity
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: recvWindow
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: side
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: signature
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: symbol
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: timeInForce
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: timestamp
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: type
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApiV1OrderResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl command: \n (HMAC SHA256)\n [linux]$ curl -H \"X-MBX-APIKEY: vmPUZE6mv9SD5VNHk4HlWFsOr6aKE2zvsw0MuIgwCIPy6utIco14y7Ju91duEh8A\" -X POST 'https://openapi.bitrue.com/api/v1/order?symbol=LTCBTC&side=BUY&type=LIMIT&timeInForce=GTC&quantity=1&price=0.1&recvWindow=5000&timestamp=1499827319559&signature=c8db56825ae71d6d79447849e617115f4a920fa2acdcab2b053c4b2838bd6b71'\n Example 2: As a request body \n req"
+components:
+  schemas:
+    DeleteApiV1OrderResponse:
+      type: object
+      properties:
+        symbol:
+          type: string
+        origClientOrderId:
+          type: string
+        orderId:
+          type: string
+        clientOrderId:
+          type: string
+    PostApiV1OrderResponse:
+      type: object
+      properties:
+        serverTime:
+          type: integer
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: X-CH-APIKEY

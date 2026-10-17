@@ -1,0 +1,47 @@
+{
+  "provider": "bitrue",
+  "sources": [
+    "_ae-authored/bitrue-openapi-generated.yml"
+  ],
+  "outputs": [
+    "bitrue-bitrue-api-api-openapi.yml",
+    "bitrue-etf-api-openapi.yml",
+    "bitrue-fapi-api-openapi.yml",
+    "bitrue-history-api-openapi.yml",
+    "bitrue-market-api-openapi.yml",
+    "bitrue-mytrades-api-openapi.yml",
+    "bitrue-order-api-openapi.yml",
+    "bitrue-poseidon-api-openapi.yml",
+    "bitrue-sapi-api-openapi.yml",
+    "bitrue-ticker-api-openapi.yml",
+    "bitrue-user-stream-api-openapi.yml",
+    "bitrue-withdraw-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "bitrue-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "bitrue-openapi-generated.yml: tagged paths GET / -> Bitrue API",
+    "bitrue-openapi-generated.yml: tagged paths GET /api/v1/etf/net-value/{symbol} -> Etf",
+    "bitrue-openapi-generated.yml: tagged paths GET /api/v1/market/kline -> Market",
+    "bitrue-openapi-generated.yml: tagged paths DELETE /api/v1/order -> Order",
+    "bitrue-openapi-generated.yml: tagged paths POST /api/v1/order -> Order",
+    "bitrue-openapi-generated.yml: tagged paths GET /api/v1/ticker/{tickerid} -> Ticker",
+    "bitrue-openapi-generated.yml: tagged paths POST /api/v1/withdraw/commit -> Withdraw",
+    "bitrue-openapi-generated.yml: tagged paths GET /api/v1/{v1id} -> Bitrue API",
+    "bitrue-openapi-generated.yml: tagged paths GET /api/v1/{v1id}/history -> History",
+    "bitrue-openapi-generated.yml: tagged paths GET /api/v2/myTrades -> MyTrades",
+    "bitrue-openapi-generated.yml: declared missing tag: Bitrue API",
+    "bitrue-openapi-generated.yml: declared missing tag: Etf",
+    "bitrue-openapi-generated.yml: declared missing tag: History",
+    "bitrue-openapi-generated.yml: declared missing tag: Market",
+    "bitrue-openapi-generated.yml: declared missing tag: MyTrades",
+    "bitrue-openapi-generated.yml: declared missing tag: Order",
+    "bitrue-openapi-generated.yml: declared missing tag: Ticker",
+    "bitrue-openapi-generated.yml: declared missing tag: Withdraw",
+    "apis.yml register: written (+12 apis, 15 total)"
+  ],
+  "skipped": []
+}

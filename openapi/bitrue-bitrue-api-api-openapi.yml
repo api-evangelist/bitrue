@@ -1,0 +1,122 @@
+openapi: 3.2.0
+info:
+  title: Bitrue API
+  version: '2026-10-13'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-13: 20 operation(s) read from 4 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Bitrue has published no machine-readable contract that the pipeline could find. Engine: anthropic.'
+  x-evidence-tiers:
+    code-example: 3
+    documentation: 17
+    pages-with-code: 4
+    pages-read: 4
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-13'
+  x-generator: generate-contract-from-docs.py
+  x-engine: anthropic
+  x-sources:
+  - https://www.bitrue.com/api-docs
+  - https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  - https://www.bitrue.com/api_docs_includes_file/futures/index.html
+  - https://www.bitrue.com/api_docs_includes_file/delivery/index.html
+servers:
+- url: https://openapi.bitrue.com
+security:
+- apiKey: []
+tags:
+- name: Bitrue API
+paths:
+  /:
+    get:
+      operationId: get
+      tags:
+      - Bitrue API
+      summary: GET /
+      x-source: https://www.bitrue.com/api_docs_includes_file/futures/index.html
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -X GET -i /fapi/v1/ticker\n The above command returns JSON structured like this: \n { \n \"high\" : \"9279.0301\" , \n \"vol\" : \"1302\" , \n \"last\" : \"9200\" , \n \"low\" : \"9279.0301\" , \n \"rose\" : \"0\" , \n \"time\" : 1595563624731 \n } \n 24 hour price change statistics: \n { \n \"high\" : \"9279.0301\" , \n \"vol\" : \"1302\" , \n \"last\" : \"9200\" , \n \"low\" : \"9279.0301\" , \n \"rose\" : \"0\" , \n \"time\" : 1595563624731 \n } \n UR"
+  /api/v1/{v1id}:
+    get:
+      operationId: get_api_v1_v1id
+      tags:
+      - Bitrue API
+      summary: Get current account information
+      x-source: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: recvWindow
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: timestamp
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiV1V1IdResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 11 example path(s) differing only at v1Id
+components:
+  schemas:
+    GetResponse:
+      type: object
+      properties:
+        high:
+          type: string
+        vol:
+          type: string
+        last:
+          type: string
+        low:
+          type: string
+        rose:
+          type: string
+        time:
+          type: integer
+    GetApiV1V1IdResponse:
+      type: object
+      properties:
+        makerCommission:
+          type: string
+        takerCommission:
+          type: string
+        buyerCommission:
+          type: string
+        sellerCommission:
+          type: string
+        canTrade:
+          type: string
+        canWithdraw:
+          type: string
+        canDeposit:
+          type: string
+        updateTime:
+          type: string
+        balances:
+          type: string
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: X-CH-APIKEY

@@ -1,0 +1,78 @@
+openapi: 3.2.0
+info:
+  title: Bitrue Etf API
+  version: '2026-10-13'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-13: 20 operation(s) read from 4 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Bitrue has published no machine-readable contract that the pipeline could find. Engine: anthropic.'
+  x-evidence-tiers:
+    code-example: 3
+    documentation: 17
+    pages-with-code: 4
+    pages-read: 4
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-13'
+  x-generator: generate-contract-from-docs.py
+  x-engine: anthropic
+  x-sources:
+  - https://www.bitrue.com/api-docs
+  - https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  - https://www.bitrue.com/api_docs_includes_file/futures/index.html
+  - https://www.bitrue.com/api_docs_includes_file/delivery/index.html
+servers:
+- url: https://openapi.bitrue.com
+security:
+- apiKey: []
+tags:
+- name: Etf
+paths:
+  /api/v1/etf/net-value/{symbol}:
+    get:
+      operationId: get_api_v1_etf_net_value_symbol
+      tags:
+      - Etf
+      summary: Get etf net value for a specific symbol
+      x-source: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+      parameters:
+      - name: symbol
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiV1EtfNetValueSymbolResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    GetApiV1EtfNetValueSymbolResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        symbol:
+          type: string
+        futruesPrice:
+          type: string
+        netValue:
+          type: string
+        beginNetValue:
+          type: string
+        beginFutruesPrice:
+          type: string
+        seqId:
+          type: string
+        beginTs:
+          type: string
+        ts:
+          type: string
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: X-CH-APIKEY

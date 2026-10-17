@@ -86,8 +86,10 @@ common:
 apis:
 - aid: bitrue:bitrue-spot-api
   name: Bitrue Spot API
-  description: REST API for Bitrue spot trading -- market data (depth, trades, klines, tickers), exchange info, account, order placement and cancellation,
-    trade history, deposits and withdrawals, plus a listenKey user data stream. Signed endpoints use an API key header and an HMAC SHA256 signature.
+  description: >-
+    REST API for Bitrue spot trading -- market data (depth, trades, klines, tickers), exchange info, account,
+    order placement and cancellation, trade history, deposits and withdrawals, plus a listenKey user data
+    stream. Signed endpoints use an API key header and an HMAC SHA256 signature.
   humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
   image: https://static.bitrue.com/img/website/uniframe/logo-20221119.png
   baseURL: https://openapi.bitrue.com
@@ -102,8 +104,9 @@ apis:
     url: https://github.com/Bitrue-exchange/Spot-official-api-docs
 - aid: bitrue:bitrue-usdt-m-futures-api
   name: Bitrue USDT-M Futures API
-  description: REST API for Bitrue USDT-margined perpetual futures -- contracts, depth, klines, tickers, account, leverage brackets, commission
-    rate, orders, trades and transfer history.
+  description: >-
+    REST API for Bitrue USDT-margined perpetual futures -- contracts, depth, klines, tickers, account,
+    leverage brackets, commission rate, orders, trades and transfer history.
   humanURL: https://www.bitrue.com/api_docs_includes_file/futures/index.html
   image: https://static.bitrue.com/img/website/uniframe/logo-20221119.png
   baseURL: https://fapi.bitrue.com
@@ -117,7 +120,8 @@ apis:
     url: https://github.com/Bitrue-exchange/USDT-M-Future-open-api-docs
 - aid: bitrue:bitrue-coin-m-futures-api
   name: Bitrue COIN-M Futures API
-  description: REST API for Bitrue coin-margined (inverse) perpetual futures -- market data, account and order management.
+  description: >-
+    REST API for Bitrue coin-margined (inverse) perpetual futures -- market data, account and order management.
   humanURL: https://www.bitrue.com/api_docs_includes_file/delivery/index.html
   image: https://static.bitrue.com/img/website/uniframe/logo-20221119.png
   baseURL: https://fapi.bitrue.com
@@ -129,17 +133,16 @@ apis:
     url: https://www.bitrue.com/api_docs_includes_file/delivery/index.html
   - type: Documentation
     url: https://github.com/Bitrue-exchange/COIN-M-Future-open-api-docs
-- aid: bitrue:bitrue-api
-  name: Bitrue API
-  description: 'Bitrue API as documented publicly: 20 operations. Contract generated from the documentation by API Evangelist (2026-10-13); not
-    the provider''s own document.'
-  humanURL: https://www.bitrue.com/api-docs
-  image: https://static.bitrue.com/img/website/uniframe/logo-20221119.png
+- aid: bitrue:bitrue-bitrue-api-api
+  name: Bitrue Bitrue API
+  description: The Bitrue API API from Bitrue — 2 operation(s) for bitrue api.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
   baseURL: https://openapi.bitrue.com
+  tags:
+  - Bitrue API
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/bitrue-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/bitrue-bitrue-api-api-openapi.yml
   - type: JSONSchema
     url: json-schema/bitrue-get-api-v1-ticker-tickerid-response-schema.json
   - type: JSONSchema
@@ -152,7 +155,248 @@ apis:
     url: json-schema/bitrue-post-sapi-v1-order-request-schema.json
   - type: JSONSchema
     url: json-schema/bitrue-post-fapi-v1-order-request-schema.json
-
+- aid: bitrue:bitrue-etf-api
+  name: Bitrue Etf API
+  description: The Etf API from Bitrue — 1 operation(s) for etf.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  baseURL: https://openapi.bitrue.com
+  tags:
+  - Etf
+  properties:
+  - type: OpenAPI
+    url: openapi/bitrue-etf-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-ticker-tickerid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v2-mytrades-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-etf-net-value-symbol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-sapi-v1-order-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-fapi-v1-order-request-schema.json
+- aid: bitrue:bitrue-fapi-api
+  name: Bitrue Fapi API
+  description: The Fapi API from Bitrue — 1 operation(s) for fapi.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  baseURL: https://openapi.bitrue.com
+  tags:
+  - Fapi
+  properties:
+  - type: OpenAPI
+    url: openapi/bitrue-fapi-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-ticker-tickerid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v2-mytrades-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-etf-net-value-symbol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-sapi-v1-order-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-fapi-v1-order-request-schema.json
+- aid: bitrue:bitrue-history-api
+  name: Bitrue History API
+  description: The History API from Bitrue — 1 operation(s) for history.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  baseURL: https://openapi.bitrue.com
+  tags:
+  - History
+  properties:
+  - type: OpenAPI
+    url: openapi/bitrue-history-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-ticker-tickerid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v2-mytrades-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-etf-net-value-symbol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-sapi-v1-order-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-fapi-v1-order-request-schema.json
+- aid: bitrue:bitrue-market-api
+  name: Bitrue Market API
+  description: The Market API from Bitrue — 1 operation(s) for market.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  baseURL: https://openapi.bitrue.com
+  tags:
+  - Market
+  properties:
+  - type: OpenAPI
+    url: openapi/bitrue-market-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-ticker-tickerid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v2-mytrades-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-etf-net-value-symbol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-sapi-v1-order-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-fapi-v1-order-request-schema.json
+- aid: bitrue:bitrue-mytrades-api
+  name: Bitrue My Trades API
+  description: The MyTrades API from Bitrue — 1 operation(s) for mytrades.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  baseURL: https://openapi.bitrue.com
+  tags:
+  - MyTrades
+  properties:
+  - type: OpenAPI
+    url: openapi/bitrue-mytrades-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-ticker-tickerid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v2-mytrades-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-etf-net-value-symbol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-sapi-v1-order-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-fapi-v1-order-request-schema.json
+- aid: bitrue:bitrue-order-api
+  name: Bitrue Order API
+  description: The Order API from Bitrue — 1 operation(s) for order.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  baseURL: https://openapi.bitrue.com
+  tags:
+  - Order
+  properties:
+  - type: OpenAPI
+    url: openapi/bitrue-order-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-ticker-tickerid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v2-mytrades-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-etf-net-value-symbol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-sapi-v1-order-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-fapi-v1-order-request-schema.json
+- aid: bitrue:bitrue-poseidon-api
+  name: Bitrue Poseidon API
+  description: The Poseidon API from Bitrue — 2 operation(s) for poseidon.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  baseURL: https://openapi.bitrue.com
+  tags:
+  - Poseidon
+  properties:
+  - type: OpenAPI
+    url: openapi/bitrue-poseidon-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-ticker-tickerid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v2-mytrades-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-etf-net-value-symbol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-sapi-v1-order-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-fapi-v1-order-request-schema.json
+- aid: bitrue:bitrue-sapi-api
+  name: Bitrue Sapi API
+  description: The Sapi API from Bitrue — 2 operation(s) for sapi.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  baseURL: https://openapi.bitrue.com
+  tags:
+  - Sapi
+  properties:
+  - type: OpenAPI
+    url: openapi/bitrue-sapi-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-ticker-tickerid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v2-mytrades-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-etf-net-value-symbol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-sapi-v1-order-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-fapi-v1-order-request-schema.json
+- aid: bitrue:bitrue-ticker-api
+  name: Bitrue Ticker API
+  description: The Ticker API from Bitrue — 1 operation(s) for ticker.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  baseURL: https://openapi.bitrue.com
+  tags:
+  - Ticker
+  properties:
+  - type: OpenAPI
+    url: openapi/bitrue-ticker-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-ticker-tickerid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v2-mytrades-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-etf-net-value-symbol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-sapi-v1-order-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-fapi-v1-order-request-schema.json
+- aid: bitrue:bitrue-user-stream-api
+  name: Bitrue User Stream API
+  description: The User Stream API from Bitrue — 2 operation(s) for user stream.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  baseURL: https://openapi.bitrue.com
+  tags:
+  - User Stream
+  properties:
+  - type: OpenAPI
+    url: openapi/bitrue-user-stream-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-ticker-tickerid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v2-mytrades-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-etf-net-value-symbol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-sapi-v1-order-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-fapi-v1-order-request-schema.json
+- aid: bitrue:bitrue-withdraw-api
+  name: Bitrue Withdraw API
+  description: The Withdraw API from Bitrue — 1 operation(s) for withdraw.
+  humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
+  baseURL: https://openapi.bitrue.com
+  tags:
+  - Withdraw
+  properties:
+  - type: OpenAPI
+    url: openapi/bitrue-withdraw-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-ticker-tickerid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v2-mytrades-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-get-api-v1-etf-net-value-symbol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-sapi-v1-order-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bitrue-post-fapi-v1-order-request-schema.json
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec
