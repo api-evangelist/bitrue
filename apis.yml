@@ -27,6 +27,14 @@ modified: '2026-10-13'
 tags:
 - Company
 - Cryptocurrency
+- Exchange
+- Trading
+- Futures
+- Market Data
+- WebSocket
+tags_raw:
+- Company
+- Cryptocurrency
 - Exchanges
 - Trading
 - Futures
@@ -96,6 +104,10 @@ apis:
   tags:
   - Spot Trading
   - Market Data
+  - Order
+  tags_raw:
+  - Spot Trading
+  - Market Data
   - Orders
   properties:
   - type: Documentation
@@ -161,6 +173,8 @@ apis:
   humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
   baseURL: https://openapi.bitrue.com
   tags:
+  - ETFs
+  tags_raw:
   - Etf
   properties:
   - type: OpenAPI
@@ -183,6 +197,8 @@ apis:
   humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
   baseURL: https://openapi.bitrue.com
   tags:
+  - FAPI
+  tags_raw:
   - Fapi
   properties:
   - type: OpenAPI
@@ -227,6 +243,8 @@ apis:
   humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
   baseURL: https://openapi.bitrue.com
   tags:
+  - Markets
+  tags_raw:
   - Market
   properties:
   - type: OpenAPI
@@ -315,6 +333,8 @@ apis:
   humanURL: https://www.bitrue.com/api_docs_includes_file/spot/index.html
   baseURL: https://openapi.bitrue.com
   tags:
+  - SAPI
+  tags_raw:
   - Sapi
   properties:
   - type: OpenAPI
